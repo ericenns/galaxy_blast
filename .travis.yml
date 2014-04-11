@@ -140,7 +140,7 @@ install:
 # we call run_functional_tests.sh to run just our tests (grouped under a
 # common section "travis" in the XML file for this purpose).
 #
-# ./run_functional_tests.sh -sid Continuous-Integration-Travis
+# ./run_functional_tests.sh --data_managers -sid Continuous-Integration-Travis
 #
 # calls:
 #
@@ -153,7 +153,7 @@ install:
 # Perhaps Galaxy's nose egg isn't being fetched?
 
 script:
- - python ./scripts/functional_tests.py -v `python tool_list.py Continuous-Integration-Travis`
+ - python ./scripts/functional_tests.py --data_managers -v `python tool_list.py Continuous-Integration-Travis`
 
 #The email defaults are too talkative while we're getting Travis working nicely.
 notifications:
