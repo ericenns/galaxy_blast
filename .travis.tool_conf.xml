@@ -28,6 +28,5 @@
     -->
     <tool file="ncbi_blast_plus/blastxml_to_tabular.xml" />
     <tool file="blast2go/blast2go.xml" />
-    <tool file="ncbi_blastdb/blastdb.xml" />
   </section>
 </toolbox>
