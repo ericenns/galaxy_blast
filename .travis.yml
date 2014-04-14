@@ -154,7 +154,7 @@ install:
 
 script:
  - python ./scripts/functional_tests.py -v `python tool_list.py Continuous-Integration-Travis`
- - python ./scripts/functional_tests.py -data_managers -v functional.test_toolbox:TestForTool_data_manager_blast_db
+ - python ./scripts/functional_tests.py -v functional.test_data_managers:TestForDataManagerTool_data_manager_blast_db -data_managers
 
 #The email defaults are too talkative while we're getting Travis working nicely.
 notifications:
